@@ -14,11 +14,8 @@ const RoomPage = (props) => {
    const history=useHistory();
   useEffect(() => {
 
-    if(!identity || roomId)
-    {
-      history.push('/')
-    }
-    else
+   
+   
     getTokenFromTwilio(setTwilioAccessTokenAction, identity);
   }, []);
 
